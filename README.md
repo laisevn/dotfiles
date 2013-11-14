@@ -31,3 +31,9 @@ Sometimes I want to duplicate changes that I've made in another machine, to do s
 * [Powerline](https://github.com/Lokaltog/powerline)
 * [Powerline fonts](https://github.com/Lokaltog/powerline-fonts)
 * [TMUX](http://tmux.sourceforge.net/)
+
+## TODO
+
+* Install brew and used formulas depenencies
+* Install fonts
+* Download and configure Iterm
