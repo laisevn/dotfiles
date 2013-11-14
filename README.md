@@ -16,6 +16,13 @@ Fire up the commands from within your home folder
     cd dotfiles
     ./install.sh
 
+## Update
+
+Sometimes I want to duplicate changes that I've made in another machine, to do so:
+
+    cd ~/dotfiles
+    git pull
+    ./install.sh
 
 ## Reference
 
