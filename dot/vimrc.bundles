@@ -1,0 +1,31 @@
+set nocompatible
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+Bundle 'croaky/vim-colors-github'
+Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/ctags.vim'
+Bundle 'vim-scripts/tComment'
+Bundle 'tpope/vim-surround'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-cucumber'
+Bundle 'danro/rename.vim'
+Bundle 'slim-template/vim-slim'
+Bundle 'Emmet.vim'
+Bundle 'groenewege/vim-less'
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'Lokaltog/powerline'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'ervandew/supertab.git'
+Bundle 'honza/vim-snippets'
+Bundle 'mileszs/ack.vim'
+
+filetype indent plugin on
