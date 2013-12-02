@@ -1,0 +1,2 @@
+alias tmx='tmux -u2 -L malvestuto'
+alias 'r.js'="node ~/r.js"

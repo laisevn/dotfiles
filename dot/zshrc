@@ -10,6 +10,9 @@ ZSH_THEME="blinks"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+
+source ~/.zshrc.alias
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -49,7 +52,7 @@ autoload -U colors && colors
 stty -ixon -ixoff
 
 
-source $ZSH/plugins/git-flow-completion.zsh
+#source $ZSH/plugins/git-flow-completion.zsh
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
