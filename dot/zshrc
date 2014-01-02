@@ -12,13 +12,11 @@ ZSH_THEME="blinks"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
-source ~/.zshrc.alias
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
 # Uncomment this to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how often before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -43,7 +41,11 @@ source ~/.zshrc.alias
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git colorize brew osx vi-mode)
+
+
+ZSH_TMUX_AUTOSTART=true
+
+plugins=(git colorize brew osx vi-mode custom-aliases osx tmux)
 
 autoload -U colors && colors
 
@@ -54,6 +56,8 @@ stty -ixon -ixoff
 
 #source $ZSH/plugins/git-flow-completion.zsh
 source $ZSH/oh-my-zsh.sh
+
+source ~/.zshrc.alias
 
 # Customize to your needs...
 export PATH=$PATH:/Users/malvestuto/.rvm/gems/ruby-1.9.3-head/bin:/Users/malvestuto/.rvm/gems/ruby-1.9.3-head@global/bin:/Users/malvestuto/.rvm/rubies/ruby-1.9.3-head/bin:/Users/malvestuto/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
