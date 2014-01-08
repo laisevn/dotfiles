@@ -45,7 +45,8 @@ DISABLE_AUTO_UPDATE="true"
 
 ZSH_TMUX_AUTOSTART=true
 
-plugins=(git colorize brew osx vi-mode custom-aliases osx tmux)
+plugins=(git colorize brew osx common-aliases osx tmux)
+
 
 autoload -U colors && colors
 
@@ -60,8 +61,4 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zshrc.alias
 
 # Customize to your needs...
-export PATH=$PATH:/Users/malvestuto/.rvm/gems/ruby-1.9.3-head/bin:/Users/malvestuto/.rvm/gems/ruby-1.9.3-head@global/bin:/Users/malvestuto/.rvm/rubies/ruby-1.9.3-head/bin:/Users/malvestuto/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
-export PATH=/usr/local/bin:$PATH
-
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+bindkey -v
