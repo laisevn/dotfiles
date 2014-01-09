@@ -7,6 +7,8 @@
 * oh-my-zsh
 * tmux
 
+### Brew formulas required
+* coreutils
 
 ## Install
 
