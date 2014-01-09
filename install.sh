@@ -5,11 +5,11 @@ for name  in dot/* ; do
   if [ -e "$target" ]; then
     if [ ! -L "$target" ]; then
       echo "WARNING: $target exists but is not a symlink."
-      echo "Backuping file $target to $(target)_old"
-      mv $target "$(target)_old"
+      echo Backuping file $target to "$target"_old
+      mv $target $(target)_old
     fi
   else
-    echo "Creating $target"
+    echo "Symlinking  $target"
     ln -s "$PWD/$name" "$target"
   fi
 done
