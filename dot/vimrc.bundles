@@ -28,4 +28,6 @@ Bundle 'ervandew/supertab.git'
 Bundle 'honza/vim-snippets'
 Bundle 'mileszs/ack.vim'
 
+Bundle 'nathanaelkane/vim-indent-guides'
+
 filetype indent plugin on
