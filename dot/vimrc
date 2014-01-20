@@ -84,8 +84,14 @@ nmap <silent> <leader>h :silent :nohlsearch<CR>
 nmap <silent> <leader>ct :TlistToggle<CR>
 nmap <leader>n :silent :NERDTreeToggle<CR>
 
-" nmap <leader>ct :FixWhitespace<CR>
 
+
+" Start interactive EasyAlign in visual mode
+vmap <Enter> <Plug>(EasyAlign)
+
+" Start interactive EasyAlign with a Vim movement
+nmap <Leader>a <Plug>(EasyAlign)
+" nmap <leader>ct :FixWhitespace<CR>
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 

@@ -1,14 +1,8 @@
 # DOTFILES
 
 ## Requirements
-
-* zsh
-* vim
+* brew 
 * oh-my-zsh
-* tmux
-
-### Brew formulas required
-* coreutils
 
 ## Install
 
@@ -36,6 +30,5 @@ Sometimes I want to duplicate changes that I've made in another machine, to do s
 
 ## TODO
 
-* Install brew and used formulas depenencies
 * Install fonts
 * Download and configure Iterm

@@ -23,4 +23,15 @@ else
   echo vundle already in place
 fi
 
+if ! type "brew" > /dev/null 2>&1; then
+  echo "Homebrew was not found, please install homebrew to continue: http://brew.sh/"
+  exit;
+else
+  echo "Updating brew formulas, it may take few minutes."
+  brew update
+
+  echo "Installing required brew formulas."
+  brew bundle
+fi
+
 vim -u ~/.vimrc.bundles +BundleInstall +qa
