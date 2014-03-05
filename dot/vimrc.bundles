@@ -27,7 +27,7 @@ Bundle 'vim-scripts/taglist.vim'
 Bundle 'ervandew/supertab.git'
 Bundle 'honza/vim-snippets'
 Bundle 'mileszs/ack.vim'
-Bundle 'junegunn/vim-easy-align'
+Bundle 'godlygeek/tabular'
 
 Bundle 'nathanaelkane/vim-indent-guides'
 
