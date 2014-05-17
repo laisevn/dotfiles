@@ -16,7 +16,7 @@ done
 
 vundle_dir=~/.vim/bundle/vundle
 echo "Checking for vundle: "
-if [ -e vundle_dir ]; then
+if [ ! -d "$vundle_dir" ]; then
   echo "Vundle was not found cloning it"
   git clone https://github.com/gmarik/vundle.git  $vundle_dir
 else
