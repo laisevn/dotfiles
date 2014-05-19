@@ -3,7 +3,7 @@
 for name  in dot/* ; do
   target="$HOME/.`basename $name`"
   if [ -e "$target" ]; then
-    if [ ! -L "$target" ]; then
+    if [! -L "$target" ]; then
       echo "WARNING: $target exists but is not a symlink."
       echo Backuping file $target to "$target"_old
       mv $target $(target)_old
@@ -19,6 +19,15 @@ echo "Checking for vundle: "
 if [ ! -d "$vundle_dir" ]; then
   echo "Vundle was not found cloning it"
   git clone https://github.com/gmarik/vundle.git  $vundle_dir
+else
+  echo vundle already in place
+fi
+
+solarized_dir=~/solarized
+echo "Checking for solarized: "
+if [ ! -d "$solarized_dir" ]; then
+  echo "Solarized was not found cloning it"
+  git clone https://github.com/altercation/solarized.git $solarized_dir
 else
   echo vundle already in place
 fi
