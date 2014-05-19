@@ -65,3 +65,7 @@ source ~/.zshrc.alias
 #Enabling  vi-mode without overwriting backwards search
 bindkey -v
 bindkey '^R' history-incremental-search-backward
+
+eval `dircolors ~/.dir_colors`
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
