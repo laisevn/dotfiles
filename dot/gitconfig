@@ -3,3 +3,8 @@
 	email = bruno.malvestuto@gmail.com
 [core]
   editor = vim
+	excludesfile = ~/.gitignore
+[push]
+	default = simple
+[rebase]
+	autosquash = true
