@@ -14,14 +14,8 @@ for name  in dot/* ; do
   fi
 done
 
-vundle_dir=~/.vim/bundle/vundle
-echo "Checking for vundle: "
-if [ ! -d "$vundle_dir" ]; then
-  echo "Vundle was not found cloning it"
-  git clone https://github.com/gmarik/vundle.git  $vundle_dir
-else
-  echo vundle already in place
-fi
+echo "Installing dein(vim plugin manager)"
+curl -L -s https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh | bash -s  ~/.config/nvim/plugin > /dev/null
 
 solarized_dir=~/solarized
 echo "Checking for solarized: "
@@ -29,7 +23,7 @@ if [ ! -d "$solarized_dir" ]; then
   echo "Solarized was not found cloning it"
   git clone https://github.com/altercation/solarized.git $solarized_dir
 else
-  echo vundle already in place
+  echo "Solarized is already installed"
 fi
 
 if ! type "brew" > /dev/null 2>&1; then
@@ -43,4 +37,4 @@ else
   brew bundle
 fi
 
-vim -u ~/.vimrc.bundles +BundleInstall +qa
+#nvim -u ~/.vimrc.bundles +BundleInstall +qa
