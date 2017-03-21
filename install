@@ -17,6 +17,9 @@ done
 echo "Installing dein(vim plugin manager)"
 curl -L -s https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh | bash -s  ~/.config/nvim/plugin > /dev/null
 
+pip2 install neovim --user
+pip3 install neovim psutil --user
+
 solarized_dir=~/solarized
 echo "Checking for solarized: "
 if [ ! -d "$solarized_dir" ]; then

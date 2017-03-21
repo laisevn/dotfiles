@@ -11,12 +11,17 @@ Bundle 'croaky/vim-colors-github'
 Bundle 'tpope/vim-fugitive'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/tComment'
+
 Bundle 'tpope/vim-surround'
+
 Bundle 'jwhitley/vim-matchit'
+
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-bundler'
+
 Bundle 'tpope/vim-cucumber'
 Bundle 'danro/rename.vim'
+
 Bundle 'slim-template/vim-slim'
 Bundle 'Emmet.vim'
 Bundle 'groenewege/vim-less'
